@@ -1,0 +1,766 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in-out
+}
+
+/*cdn*/
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+/*Manufacturing Consent*/
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+
+/*unnel Display*/
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+/* arabic  fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap');
+
+:root {
+    --color-background--: #0b1120;
+    --color--main: #FFFFFF;
+    --color-green-notion: #22E584;
+    --color-green-dark: #1BCC72;
+    --color-blue-sky: #3DBEFF;
+    --color-gry-clera: #A5ACBA;
+    --color-gry-dark: #10182F;
+}
+
+body {
+    background-color: #03060f;
+    color: #FFFFFF;
+    font-family: "Playpen Sans Arabic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transition: 0.5s ease;
+    min-height: 150vh;
+
+}
+
+.scrolled {
+    background-color: #000000d7 !important;
+    box-shadow: 0px 0px 20px var(--color-green-dark);
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.228);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    font-family: "Playpen Sans Arabic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.2s ease-in-out;
+}
+
+
+.logo-navbar {
+    flex: 2;
+}
+
+.links {
+    flex: 4;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.links button {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke !important;
+    font-size: 15px;
+}
+
+.links .links-ul {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.links-ul ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+
+    & a {
+        color: var(--color-gry-clera);
+        transition: 0.4s ease;
+        text-shadow: 0px 3px 17px var(--color-green-dark);
+    }
+}
+
+.links i {
+    text-shadow: 0px 0px 12px var(--color-green-notion);
+    transition: 0.5s ease;
+}
+
+.links i:hover {
+    font-size: larger;
+    cursor: pointer;
+}
+
+.links-ul ul a:hover {
+    color: var(--color-green-notion);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 15px var(--color-green-dark);
+
+
+}
+
+
+
+/*home face*/
+.HomeFace {
+    width: 100%;
+    padding: 30px;
+    margin-top: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.HomeFaceContent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.HometxtSecend {
+    color: var(--color-gry-clera);
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 3px;
+}
+
+.HometxtSecend span {
+    color: var(--color-green-dark);
+}
+
+/*co,tacte*/
+.ContectFlewContect {
+    background-color: #0b1120; /* Solid background color */
+    border-radius: 18px;
+    box-shadow: 0 0 6px rgba(34, 229, 132, 0.3);
+    padding: 0 10px;
+}
+
+.ContectFlewContect li {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20% !important;
+}
+
+.ContectFlewContect a {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 3px 50px;
+    border-radius: 27px;
+    border: none;
+    color: #fff;
+}
+
+.ContectFlewContect i {
+    font-size: 20px;
+}
+
+.ContectFlewContect a:hover {
+    transform: scale(1.1);
+    background-color: rgba(34, 229, 132, 0.1);
+    box-shadow: 0 0 10px rgba(34, 229, 132, 0.6);
+    border: none;
+    color: #fff;
+}
+
+.buutonHomeFace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    & a {
+        background-color: transparent;
+        border: none;
+        padding: 9px;
+        border-radius: 15px;
+        color: var(--color--main);
+        font-family: "Playpen Sans Arabic", cursive;
+        font-weight: 500;
+        font-size: 20px;
+        box-shadow: 0px 0px 5px var(--color-blue-sky);
+        transition: 0.5s ease;
+    }
+
+
+
+}
+
+.buutonHomeFace a:hover {
+    background-color: var(--color-green-notion);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--color-green-notion);
+
+}
+
+/*Projects */
+.Projects {
+    width: 100%;
+}
+
+.ProjectContetn {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+
+}
+
+.Projects h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/*Card Project*/
+.card {
+    flex: 1;
+    background-color: var(--color-background--);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}
+
+.card img {
+    width: 65px !important;
+}
+
+.ProjectsCrads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.ProjectContetn span {
+    color: var(--color-gry-clera);
+    font-weight: 500;
+}
+
+
+/*abouut*/
+.About {
+    width: 100%;
+
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.AboutContent {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.About .AboutImg {
+    flex: 1;
+
+}
+
+.AboutImg object {
+    position: relative;
+    right: -60px !important;
+}
+
+.AboutImg object {
+
+    height: 100%;
+}
+
+
+.About .AboutTxt {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Form*/
+.formsection {
+    width: 100%;
+
+    margin-top: 80px;
+
+}
+
+.formsection form {
+    width: 60%;
+    margin: auto;
+
+    color: var(--color--main);
+    border-radius: 15px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.FormInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1415164b;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.FormInputs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+form input,
+textarea {
+    color: black;
+    width: 400px;
+    border: none;
+    height: 30px !important;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(10, 130, 134);
+    box-shadow: 0px 0px 5px var(--color-blue-sky);
+    transition: 0.5s ease;
+    padding: 0 15px;
+    ;
+
+    font-family: "Playpen Sans Arabic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.5s ease;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+textarea {
+    width: 400px;
+    height: 60px !important;
+    text-align: start;
+}
+
+form label {
+    flex: 3;
+}
+
+input:focus,
+textarea:focus {
+    text-align: center;
+    box-shadow: 0px 0px 5px var(--color-blue-sky);
+    background-color: #ffffff;
+    transform: scale(1.2);
+
+    color: #03060f;
+
+}
+
+.submitinput {
+    background-color: var(--color-green-dark);
+    width: 100%;
+}
+
+form label::after {
+    content: ':';
+    padding: 3px;
+}
+
+/*foter*/
+.foter {
+    width: 100%;
+    box-shadow: 0px 0px 10px var(--color-green-notion);
+    margin-top: 40px;
+}
+
+.fotereContetn {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*MenuList phone*/
+.Menu {
+    width: 200px;
+    position: fixed;
+    top: 90px;
+    right: 18px;
+    background-color: transparent;
+
+    background-color: var(--color-background--);
+    padding: 10px;
+    box-shadow: 0px 0px 20px var(--color-blue-sky);
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+}
+
+
+.MeuConten ul {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+}
+
+.MeuConten li {
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.MeuConten a {
+    border-radius: 10px;
+    background-color: var(--color-green-dark);
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.MeuConten a:hover {
+    transform: scale(1.2);
+    background-color: var(--color-green-notion);
+}
+
+
+
+/*response phone*/
+
+@media only screen and (max-width:600px) {
+
+    /*nav nar response start*/
+    .navbar {
+        display: flex;
+        flex-direction: row !important;
+        gap: 20px !important;
+        width: 100%;
+        z-index: 10;
+        padding: 0px !important;
+        padding-right: 20px !important;
+    }
+
+    .logo-navbar {
+        width: 10% !important;
+
+    }
+
+    .navbar .links-ul {
+        display: none !important;
+        background: blue;
+    }
+
+    /*nav nar response end*/
+    /*nHome face response start*/
+    .HomeFace {
+        width: 100% !important;
+        padding: 0px !important;
+        margin-top: 0px;
+        height: 100vh !important;
+        text-align: center;
+
+
+    }
+
+    .HomeFaceContent {
+        flex-direction: column !important;
+        width: 80% !important;
+        margin: auto !important;
+        overflow: hidden;
+        padding: 20px !important;
+    }
+
+    .HomeFaceContent .HomeLogo {
+        width: 100% !important;
+        flex-grow: 1;
+
+    }
+
+    .HomeLogo img {
+        width: 100% !important;
+    }
+
+    .HometxtSecend {
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+
+    .buutonHomeFace a {
+        background-color: var(--color-green-dark);
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: 0px 0px 25px var(--color-blue-sky);
+    }
+
+    .ContectFlewGlobel {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ContectFlewContect {
+        width: 90% !important;
+        background-color: transparent;
+        border-radius: 18px;
+        box-shadow: 0px 0px 20px var(--color-blue-sky);
+
+
+    }
+
+    .ContectFlewContect a {
+
+        padding: 5px 25px;
+        border-radius: 12px;
+    }
+
+    /*home face responce end*/
+    /*about responce start*/
+
+
+    .About {
+        width: 100% !important;
+    }
+
+    .AboutContent {
+        width: 80% !important;
+        margin: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+    }
+
+    .AboutImg {
+        overflow: hidden !important;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 130px !important;
+    }
+
+    .AboutImg object {
+        position: relative;
+        right: -50px !important;
+    }
+
+    .AboutTxt h2 {
+        font-size: 20px;
+    }
+
+    /*about  responce end*/
+
+    /*projects responce start*/
+
+    .Projects {
+        width: 100% !important;
+        background-color: red;
+        overflow: hidden;
+    }
+
+    .ProjectContetn {
+        width: 100% !important;
+        overflow: hidden;
+        padding: 10px 15px;
+        background-color: #03060f;
+
+    }
+
+    .ProjectsCrads {
+        flex-shrink: 1 !important;
+        flex-wrap: wrap;
+    }
+
+    .ProjectContetn .ProjectsCrads {
+        flex-grow: 1;
+    }
+
+    /*caard project*/
+    .card {
+        width: 100% !important;
+
+    }
+
+    .card span {
+        font-size: 13px;
+    }
+
+    ;
+    /*projects respons end*/
+
+    /*form respons start*/
+    .formsection {
+        width: 80% !important;
+        background-color: red !important;
+
+    }
+
+    .formsection form {
+        width: 100% !important;
+
+    }
+
+    form input,
+    textarea {
+        width: 110% !important;
+        box-shadow: 0px 0px 20px var(--color-blue-sky);
+    }
+
+    /*form response end*/
+    /*foter response start*/
+    .foter {
+        width: 100%;
+
+    }
+
+    .fotereContetn {
+        width: 80% !important;
+        margin: auto;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoFoter {
+        width: 100% !important;
+        flex-grow: 1;
+        overflow: hidden !important;
+    }
+
+    .logoFoterimg {
+        width: 50%;
+    }
+
+    .logoFoter img {
+        position: relative;
+        right: -30px !important;
+    }
+
+    .foter .links-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/*pope start*/
+.Ppoe {
+    width: 100%;
+    height: 100vh;
+    background-color: #02273d54;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 0pc
+}
+
+.PopeContent {
+   background-color: var(--color-background--);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    width: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px  yellow;
+
+}
+
+
+
+.Ppoeimg {
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.PopeContent .Ppoeimg img {
+    width: 100% !important;
+}

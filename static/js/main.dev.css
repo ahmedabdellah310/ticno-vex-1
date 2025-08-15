@@ -1,0 +1,20 @@
+/* static/js/index.css */
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+/* static/js/project/style/GlobelStyle.css */
+
+/* static/js/project/style/ContectFlew.css */

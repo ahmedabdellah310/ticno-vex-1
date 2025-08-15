@@ -1,0 +1,31 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+
+.ContectFlewGlobel {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 100%;
+ 
+
+}
+
+.ContectFlewContect {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 10px;
+
+}
+
+.ContectFlewContect ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+
+}

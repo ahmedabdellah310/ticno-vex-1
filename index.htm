@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./ticno-code.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="./ticno-code.png">
+    <link rel="manifest" href="./manifest.json">
+    <title>Ticno VEX</title>
+    <!-- Dev bundle for local file:// usage -->
+    <script defer="defer" src="./static/js/main.dev.js"></script>
+    <link href="./static/css/main.a0018393.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      (function() {
+        const oldTexts = ['أحصل على عرض', 'احصل على عرض'];
+        const newText = 'تواصل معنا';
+
+        function replaceInElement(el) {
+          if (!el || !el.textContent) return;
+          let changed = false;
+          let text = el.textContent;
+          oldTexts.forEach(t => {
+            if (text.includes(t)) {
+              text = text.split(t).join(newText);
+              changed = true;
+            }
+          });
+          if (changed) el.textContent = text;
+        }
+
+        function scanAll() {
+          document.querySelectorAll('a, p, li, button, span, h1, h2, h3, h4').forEach(replaceInElement);
+        }
+
+        // Initial pass
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', scanAll);
+        } else {
+          scanAll();
+        }
+
+        // Observe future changes (for React-rendered content)
+        const obs = new MutationObserver(() => {
+          scanAll();
+        });
+        obs.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
+</body>
+
+</html>
